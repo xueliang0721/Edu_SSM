@@ -16,7 +16,7 @@
 			<div class="header_top">
 				<header>
 					<div class="header_logo">
-						<h1>郭永峰IT教育后台系统</h1>
+						<h1>教育后台系统</h1>
 					</div>
 					<div class="header_tab">
 						<ul>

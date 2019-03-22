@@ -2,6 +2,7 @@ package com.yuxiu.edu.web.controller;
 
 import com.yuxiu.edu.model.User;
 import com.yuxiu.edu.service.IUserService;
+import com.yuxiu.edu.web.controller.base.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("user")
-public class UserController {
+public class UserController extends BaseController<User>{
 
     @Autowired
     private IUserService userService;
@@ -30,16 +31,16 @@ public class UserController {
 
     @RequestMapping("manage")
     public String manage(){
-        return "user/manage";
+        return MANAGER_PAGE;
     }
 
     @RequestMapping("info")
     public String info(){
-        return "user/info";
+        return INFO_PAGE;
     }
 
     @RequestMapping("edit")
     public String edit(){
-        return "user/edit";
+        return EDIT_PAGE;
     }
 }
