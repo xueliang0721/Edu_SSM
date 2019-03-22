@@ -1,39 +1,47 @@
 # Edu_SSM
 
-#### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是开源中国推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+**教育后台管理系统 介绍**
 
-#### 软件架构
-软件架构说明
+**SSM 框架**
 
 
-#### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+**SSM开发流程**
 
-#### 使用说明
+1. 创建一个空白项目
+2. 创建父工程
+3. 创建model子工程
+4. 创建dao子工程
+5. 创建service子工程
+6. 创建manager后台管理
+7. Manager中先集成springMVC
+8. 在manager中web.xml中加载springMVC配置文件
+9. 将web.xml头文件部分改为3.0
+10. dao整合Mybatis，依赖模型
+11. service依赖dao
+12. manager依赖service
+13. Manager 添加其他的依赖
+14. manager的其他配置文件
+15.在web.xml中加载applicationContext.xml文件
 
-1. xxxx
-2. xxxx
-3. xxxx
+**Git上传项目到码云上**
+1.	在码云创建项目
+2.	把项目代码拖进去【文件太多就没法上传，使用git命令】
+3.	在本地创建一个文件夹
+4.	把码云项目克隆一份
+5.	把项目代码丢进去
+6.	把代码添加到git缓存中
+7.	提交
+8.	使用push把创建上传码云
+具体命令：
+1.	git clone https://gitee.com/mayaole/EduProject.git
+2.	把项目内容放在目录下
+3.	Git add .
+4.	Git commit -m ‘提交’
+5.	Git push origin master
 
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
 
 
-#### 码云特技
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+

@@ -6,18 +6,20 @@
 	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/Scripts/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/assets/Scripts/common.js"></script>
 <script type="text/javascript">
-	 function search(){
-	/* $("#searchUserForm1").attr("action","");
-	 $("#searchUserForm1").submit();
-	 }*/
+	 function search() {
+         /* $("#searchUserForm1").attr("action","");
+          $("#searchUserForm1").submit();
+          }*/
 
-	 $(document).ready(function(){
-		 
-	 	$("#birthday").datepicker({
-			dateFormat: 'yy-mm-dd',
-		});
+         $(document).ready(function () {
 
-	 });
+             $("#birthday").datepicker({
+                 dateFormat: 'yy-mm-dd',
+             });
+
+         });
+
+     };
 </script>
 </head>
 <body>
